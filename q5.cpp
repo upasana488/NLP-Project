@@ -58,7 +58,7 @@ int main()
 				negword++;
 			
 		}	
-		cout<<posword<<" "<<negword<<endl;
+	//	cout<<posword<<" "<<negword<<endl;
 	}
 	cout<<"posword and negwords";
 	cout<<posword<<" "<<negword<<endl;
@@ -71,8 +71,8 @@ int main()
 		//vocabsize++;
 		cout<<s<<" "<<cp<<" "<<cn<<" "<<pp<<" "<<pn<<endl;
 	}*/
-	cout<<posrev<<" "<<negrev<<endl;
-	cout<<"vocabsize is"<<vocabsize<<endl;
+	//cout<<posrev<<" "<<negrev<<endl;
+	//cout<<"vocabsize is"<<vocabsize<<endl;
 	
 	while(!feof(test))
 	{
