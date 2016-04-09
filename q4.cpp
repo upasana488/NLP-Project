@@ -55,7 +55,6 @@ void inorder(struct node*root)
 		float probneg= (float) (root->countneg +1)/(1698+1080);
 		if(root->countneg+root->countpos>=2)
 			fprintf(vocab,"%s %d %d %f %f\n",root->str,root->countpos,root->countneg,probpos,probneg);
-		//cout<<root->str<<root->countpos<<root->countneg<<endl;
 		inorder(root->right);
 	}
 }
@@ -74,9 +73,7 @@ int main()
 		else if(sign=='-')
 			neg++;
 
-		//cout<<sign;
-		//fscanf(fp,"%s",word);
-		//cout<<word;
+	
 		fgets(str,499,fp);
 		
 		i=0;
@@ -89,7 +86,7 @@ int main()
 			while((str[i]<='z' && str[i]>='a') || str[i]==39)
 				word[j++]=str[i++];
 			word[j]='\0';
-			//cout<<word<<" ";	
+	
 			temp = getnode(word);
 		root = insert(root,temp);
 		}
